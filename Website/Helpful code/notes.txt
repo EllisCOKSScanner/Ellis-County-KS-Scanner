@@ -1,0 +1,4 @@
+
+
+whatever is in between <style> </style>
+-is the customization of how it is presented. width, height, placement etc

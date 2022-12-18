@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Login Form</title>
+<link rel="stylesheet" type="text/css" href="./style.css">
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+<div class="login-form" </div>
+<h1>login here</h1>
+<form action="#" method="post"
+<p>User Name</p>
+<input type="text" name="user" placeholder="User Name Here"</input>
+<p>Password</p>
+<input type="password" name="password" placeholder="Password">
+<button type="submit">Click to Login</button>
+<input type="submit" value="Login" class="submit-btn" onclick="auth()" />
+</form>
+
+
+
+<script>
+function auth(){
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+if(email== "admin@gmail.com" && password=="admin123"){
+window.location.assign("authindex.html");
+alert("Login Successfully ");
+}
+else{
+alert("Invalid Information ")
+return;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+{
+padding:0;
+margin:0;
+font-family:sans-serif;
+}
+
+body{
+background:url('./bg.jpg') no-repeat;
+background-size:cover;
+</style>
+
+
+
+
+<div class="SubscriberInfo">
+<p> Don't have an account? Subscribe for $5 per year to unlock exclusive features. Find us on Facebook at Facebook.com/EllisCOScanner </p>
+
+
+<div id="paypal-button-container-P-62W37534WK5773705MOPFVMQ"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AZ_Be11J7uLC7fFClgyXh124WJm1LpDnIckTxW01EZD8FFuCrBL2t590GcH3gKDafuHYd45Z3X8-h8Hu&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-62W37534WK5773705MOPFVMQ'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-62W37534WK5773705MOPFVMQ'); // Renders the PayPal button
+</script>
+
+
+
+</body>
+</html>
