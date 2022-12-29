@@ -57,7 +57,7 @@ width:100%;
 height:85vh;
 }
 .content{
-padding:45%;
+padding:0.2%;
 }
 .content{
 font-size:18px;
@@ -78,7 +78,6 @@ text-align:left;
 
 
 </head>
-
 
 
 
@@ -110,6 +109,51 @@ text-align:left;
 
 
 </div>
+
+
+
+
+
+
+
+<div class="SubscriberInfo"></div>
+<p style="font-size:25px;"> Don't have an account? Subscribe for $5 per year to unlock exclusive features. </p>
+<p style="font-size:18px;"> If you have any questions, or want to view our free content, you can find us on: Facebook.com/EllisCOScanner</p>
+
+<div id="paypal-button-container-P-62W37534WK5773705MOPFVMQ"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AZ_Be11J7uLC7fFClgyXh124WJm1LpDnIckTxW01EZD8FFuCrBL2t590GcH3gKDafuHYd45Z3X8-h8Hu&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-62W37534WK5773705MOPFVMQ'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-62W37534WK5773705MOPFVMQ'); // Renders the PayPal button
+</script>
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<iframe src="https://script.google.com/macros/s/AKfycbyk8ikhpKDPwvkU5ULEjcXDdB0ea390g65S2xrQ7KZlMtORIoMFZD3PKqIySKYcT-NryQ/exec" width="50%" height="500px"></iframe>
+
+
+
+
+
 
 
 
