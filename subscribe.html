@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+<title>Ellis County KS Scanner</title>
+
+
+<style>
+*{
+margin:0;
+padding:0;
+}
+header{
+height:60px;
+background:#A21717;
+padding:0 50px;
+}
+.logo{
+width:30%;
+float:left;
+color:#fff;
+font-weight:bold;
+text-transform:uppercase;
+line-height:60px;
+font-size:25px;
+font-family:sans-serif;
+}
+nav{
+width:68%
+float:right;
+}
+nav ul{
+list-style:none;
+float:right;
+}
+
+nav ul li{
+display: inline-block;
+}
+nav ul li a{
+text-decoration: none;
+color:#fff;
+font-family:sans-serif;
+font-weight:bold;
+margin:0 10px;
+line-height:60px;
+text-transform:uppercase;
+}
+.banner{
+height:100%;
+}
+.banner img{
+width:100%;
+height:85vh;
+}
+.content{
+padding:0.2%;
+}
+.content{
+font-size:18px;
+line-height:2.5;
+font-family:sans-serif;
+margin-bottom:75px;
+}
+footer{
+background:#000000;
+color:#fff;
+padding:20px 550px;
+text-align:left;
+}
+
+</style>
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+<header>
+<div Class="logo">ECKS Subscription</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="memberchat.html">Member Chat</a></li>
+<li><a href="broadcastify.html">Broadcastify</a></li>
+<li><a href="https://www.facebook.com/elliscoscanner" target="_blank">Facebook</a></li>
+<li><a href="post.html">Posts</a></li>
+<li><a href="Subscribe.html">Subscribe</a></li>
+</ul>
+</nav
+</header>
+
+<div class="content">
+
+
+</div>
+
+
+
+
+
+
+
+<div class="SubscriberInfo"></div>
+<p style="font-size:25px;"> Don't have an account? Subscribe for $5 per year to unlock exclusive features. </p>
+<p style="font-size:18px;"> If you have any questions, or want to view our free content, you can find us on: Facebook.com/EllisCOScanner</p>
+
+<div id="paypal-button-container-P-62W37534WK5773705MOPFVMQ"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AZ_Be11J7uLC7fFClgyXh124WJm1LpDnIckTxW01EZD8FFuCrBL2t590GcH3gKDafuHYd45Z3X8-h8Hu&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-62W37534WK5773705MOPFVMQ'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-62W37534WK5773705MOPFVMQ'); // Renders the PayPal button
+</script>
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<iframe src="https://script.google.com/macros/s/AKfycbyk8ikhpKDPwvkU5ULEjcXDdB0ea390g65S2xrQ7KZlMtORIoMFZD3PKqIySKYcT-NryQ/exec" width="50%" height="500px"></iframe>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
